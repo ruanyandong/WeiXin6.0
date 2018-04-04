@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+       定义属性
+    -->
+
+    <attr name="icon" format="reference"></attr>
+    <attr name="color" format="color"></attr>
+    <attr name="text" format="string"></attr>
+    <attr name="text_size" format="dimension"></attr>
+
+    <!--
+    dimension:尺寸，维度
+    字体尺寸单位是sp，要用dimension，不能用integer
+    -->
+
+    <!--声明属性-->
+    <declare-styleable name="ChangeColorIconWithText">
+
+        <!--format已经声明过，不用再写-->
+        <attr name="icon" />
+        <attr name="color" />
+        <attr name="text" />
+        <attr name="text_size"/>
+
+    </declare-styleable>
+
+</resources>

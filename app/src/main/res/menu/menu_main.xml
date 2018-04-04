@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ai.weixin60.MainActivity">
+
+    <!--collapseActionView
+     此属性会将action view折叠到一个按钮中，用户点击的时候才会展开。
+     ActionViewClass属性用于指定action view的类，这里的SearchView是系统提供的，
+     我们也可以自定义。
+     -->
+
+    <!--
+    加上android:actionViewClass="android.widget.SearchView"属性后，
+    此条MenuItem图片显示为搜索图片，点击后出现搜索框，点搜索框右边的X退出搜索模式，
+    如果在android:showAsAction属性中加上collapseActionView属性，
+    那么MenuItem图片为自定义的图片，并且靠点击左上角图片退出搜索模式。
+    android:actionLayout="@layout/list_item"属性与android:actionViewClass不能共存，
+    有android:actionViewClass则android:actionLayout属性不起作用。
+    -->
+
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/ic_menu_search"
+        android:title="@string/action_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.SearchView"/>
+
+
+    <item android:id="@+id/action_group_chat"
+        android:icon="@drawable/ic_menu_allfriends"
+        android:title="@string/menu_group_chat"/>
+
+    <item android:id="@+id/action_add_friend"
+        android:icon="@drawable/ic_menu_invite"
+        android:title="@string/menu_addfriend"/>
+
+    <item android:id="@+id/action_scan"
+        android:icon="@drawable/ic_menu_send"
+        android:title="@string/menu_scan"/>
+
+    <item android:id="@+id/action_feedback"
+        android:icon="@drawable/ic_menu_compose"
+        android:title="@string/menu_feedback"/>
+
+</menu>

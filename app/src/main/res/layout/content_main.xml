@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <android.support.v4.view.ViewPager
+       android:id="@+id/id_viewpager"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1">
+   </android.support.v4.view.ViewPager>
+
+   <LinearLayout
+       android:background="@drawable/tab_backgroundcolor"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:orientation="horizontal"
+       >
+
+      <com.example.ai.weixin60.ChangeColorIconWithText
+          android:id="@+id/id_indicator_one"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+
+          app:icon="@drawable/ic_menu_start_conversation"
+          app:color="#ff45c01a"
+          app:text="@string/app_name"
+          app:text_size="12sp"
+          android:padding="5dp"/>
+
+      <com.example.ai.weixin60.ChangeColorIconWithText
+          android:id="@+id/id_indicator_two"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+
+          app:icon="@drawable/ic_menu_friendslist"
+          app:color="#ff45c01a"
+          app:text="@string/tab_contact"
+          app:text_size="12sp"
+          android:padding="5dp"/>
+
+      <com.example.ai.weixin60.ChangeColorIconWithText
+          android:id="@+id/id_indicator_three"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+
+          app:icon="@drawable/ic_menu_emoticons"
+          app:color="#ff45c01a"
+          app:text="@string/tab_found"
+          app:text_size="12sp"
+          android:padding="5dp"/>
+
+      <com.example.ai.weixin60.ChangeColorIconWithText
+          android:id="@+id/id_indicator_four"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+
+          app:icon="@drawable/ic_menu_cc_am"
+          app:color="#ff45c01a"
+          app:text="@string/tab_me"
+          app:text_size="12sp"
+          android:padding="5dp"/>
+
+
+
+   </LinearLayout>
+
+</LinearLayout>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
